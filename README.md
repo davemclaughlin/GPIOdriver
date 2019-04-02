@@ -17,4 +17,14 @@ In you functions use the following to control the GPIO. Eg, these lines of code 
 
     State = gpio.readGPIO("gpio88");
 
+You will also need to add this to your build.gradle file
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+
+	
 See the code for further details.
